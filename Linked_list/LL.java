@@ -1,7 +1,7 @@
 package Linked_list;
 
 public class LL {
-    static Node head;
+    private static Node head;
 
     public class Node {
         private String data; // cz it is a String Linked List;
@@ -172,11 +172,13 @@ public class LL {
         // list.dellast();
         // list.printlist();
         // list.dellast();
-        // list.reverseIterative();
+        //
         // list.printlist();
         // LL.head = list.reverseRecursive(LL.head);
         // list.printlist();
         // list.removeNthNode(head, 2);
+        list.printlist();
+        list.reverseIterative();
         list.printlist();
 
     }
