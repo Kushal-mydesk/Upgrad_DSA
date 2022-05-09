@@ -58,9 +58,9 @@ public class Addition_of_nth {
         if (head == null) {
             head = new Node(data);
         }
-        int count = 1;
+        int count = 0;
         Node newnode = new Node(data);
-        Node currnode = head.next;
+        Node currnode = head;
         while (count < pos - 1) {
             currnode = currnode.next;
             count++;
@@ -80,7 +80,7 @@ public class Addition_of_nth {
         list.addlast(28);
         list.printlist();
         // the pos value should be lesser than the list_size or same
-        list.addition_at_nth(25, 4);
+        list.addition_at_nth(25, 1);
         list.printlist();
     }
 }
