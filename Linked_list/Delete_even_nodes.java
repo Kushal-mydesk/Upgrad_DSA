@@ -94,5 +94,6 @@ public class Delete_even_nodes {
 
         deleteEvenNodes(list.getHead());
         list.printList();
+        sc.close();
     }
 }

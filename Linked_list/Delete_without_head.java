@@ -1,27 +1,27 @@
 package Linked_list;
 
-class Node {
+class Nodemode {
     int data;
-    Node next;
+    Nodemode next;
 
-    Node(int data) {
+    Nodemode(int data) {
         this.data = data;
         this.next = null;
     }
 }
 
 class Linkedlist {
-    Node head;
+    Nodemode head;
 
     public void addlast(int data) {
 
-        Node newnode = new Node(data);
+        Nodemode newnode = new Nodemode(data);
         if (head == null) {
             head = newnode;
             return;
         }
 
-        Node currnode = head;
+        Nodemode currnode = head;
         while (currnode.next != null) {
             currnode = currnode.next;
         }
@@ -33,7 +33,7 @@ class Linkedlist {
         if (head == null) {
             System.out.println("There is no list to show");
         }
-        Node currnode = head;
+        Nodemode currnode = head;
         while (currnode != null) {
             System.out.print(currnode.data + " -> ");
             currnode = currnode.next;
@@ -47,7 +47,7 @@ class Linkedlist {
 }
 
 public class Delete_without_head {
-    public static void deleteNode(Node node) {
+    public static void deleteNode(Nodemode node) {
         if (node == null) {
             return;
         }
@@ -68,7 +68,7 @@ public class Delete_without_head {
         list.addlast(21);
         list.printlist();
 
-        Node newnode = new Node(25);
+        Nodemode newnode = new Nodemode(25);
 
         deleteNode(newnode);
 
