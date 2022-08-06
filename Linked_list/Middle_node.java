@@ -1,4 +1,4 @@
-package Linked_list;
+//package Linked_list;
 
 public class Middle_node {
     static Node head;

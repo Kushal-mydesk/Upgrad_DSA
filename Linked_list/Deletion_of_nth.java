@@ -1,4 +1,4 @@
-package Linked_list;
+//package Linked_list;
 
 /**
  * Deletion_of_nth

@@ -1,45 +1,51 @@
-package Hasmap;
+//HashMap is used to store the ke-value pair datas
 
 import java.util.*;
 
 public class Firstmap {
 
     public static void main(String[] args) {
+        // country(key) , population(value)
 
-        // It actually can be used to show a relational data of two types, the datatypes
-        // we need to specify should be class name
-        HashMap<String, Integer> Empids = new HashMap<>();
-        // lets have some look at the functions
-        Empids.put("Favdogs", 20); // this will add keys and values
-        Empids.put("Superdogs", 35);
-        Empids.put("Lazydogs", 50);
+        HashMap<String, Integer> map = new HashMap<String, Integer>(); // declaring
 
-        System.out.println(Empids);
+        // Insertion operation
+        map.put("India", 120);
+        map.put("US", 80);
+        map.put("China", 150);
 
-        System.out.println(Empids.get("Favdogs")); // it checks for a value of a given key;
+        // System.out.println(map);
 
-        System.out.println(Empids.containsKey("superdogs")); // its for checking if we have that key present in or not,
-                                                             // gives boolean value
+        // Search operation -- to look if the key is present or not
+        if (map.containsKey("Nepal")) {
+            System.out.println("Key is present in the map");
+        } else {
+            System.out.println("Key is not present in the map");
+        }
 
-        System.out.println(Empids.containsValue(35)); // same thing , just checks the value
+        // Getting the value of a particular key
+        String val = map.get("India").toString();
+        System.out.println("Value is " + val + " cr");
 
-        // Now to update anything there are two types of methods we can use , 1. put()
-        // can be also done, 2.replace()
-        // what put() will do that it will update the presented key's value, or if the
-        // key is new to hasp then it will also put in
-        // replace() can only update a key if its present in that hash,
+        // Traversing or iterating over the values
 
-        Empids.put("Favdogs", 21);
-        Empids.replace("supradogo", 35, 34);
+        // 1. through Entryset
 
-        System.out.println(Empids);
+        for (Map.Entry<String, Integer> ele : map.entrySet()) {
+            System.out.println(ele.getKey() + " : " + ele.getValue());
+        }
 
-        // there also a method putIfAbsent() , it will only do if the key is totally new
+        // 2.through keyset
 
-        Empids.putIfAbsent("Superdogs", 34);
-        System.out.println(Empids);
+        Set<String> keys = map.keySet();
+        for (String key : keys) {
+            System.out.println(key + " : " + map.get(key));
+        }
 
-        Empids.remove("Superdogs"); // for removing any key
-        System.out.println(Empids);
+        // Deletion of any pair
+
+        map.remove("China");
+        System.out.println(map);
     }
+
 }

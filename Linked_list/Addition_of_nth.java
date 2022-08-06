@@ -1,4 +1,4 @@
-package Linked_list;
+//package Linked_list;
 
 public class Addition_of_nth {
     private static Node head;

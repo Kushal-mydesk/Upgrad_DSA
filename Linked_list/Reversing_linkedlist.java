@@ -1,10 +1,10 @@
-package Linked_list;
+// package Linked_list;
 
 import java.util.*;
 
 public class Reversing_linkedlist {
 
-    public static LinkedList<Integer> reverseLinkedList(LinkedList<Integer> ll) {
+    public static java.util.LinkedList<Integer> reverseLinkedList(java.util.LinkedList<Integer> ll) {
         for (int i = 0; i < ll.size() / 2; i++) {
             int temp = ll.get(i);
             ll.set(i, ll.get(ll.size() - i - 1));
@@ -15,7 +15,7 @@ public class Reversing_linkedlist {
     }
 
     public static void main(String[] args) {
-        LinkedList<Integer> ll = new LinkedList<>();
+        java.util.LinkedList<Integer> ll = new java.util.LinkedList<>();
         int count = 5;
 
         for (int i = 1; i <= 5; i++) {

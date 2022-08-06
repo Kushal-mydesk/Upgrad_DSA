@@ -1,10 +1,9 @@
-package Linked_list;
 
 import java.util.*;
 
 public class Modern_list {
     public static void main(String[] args) {
-        LinkedList<String> list = new LinkedList<>();
+        java.util.LinkedList<String> list = new java.util.LinkedList<>();
         // using collection framworks functions
         list.addFirst("a");
         list.addFirst("is");
