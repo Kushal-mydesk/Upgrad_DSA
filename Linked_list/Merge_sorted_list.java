@@ -1,8 +1,9 @@
-import java.io.*;
+
+//import java.io.*;
 import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
+//import java.text.*;
+//import java.math.*;
+//import java.util.regex.*;
 
 class Node {
     int data;
@@ -99,5 +100,6 @@ public class Merge_sorted_list {
             System.out.println(head.data);
             head = head.next;
         }
+        sc.close();
     }
 }

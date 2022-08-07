@@ -1,6 +1,6 @@
 // package Linked_list;
 
-import java.util.*;
+//import java.util.*;
 
 public class Reversing_linkedlist {
 
