@@ -41,7 +41,7 @@ public class FirstSet {
         // as it does not have any index to iterate with, we have to iterate through
         // "The Iterator"
 
-        Iterator it = set.iterator(); // set has this special method that returns a position ,
+        Iterator<Integer> it = set.iterator(); // set has this special method that returns a position ,
                                       // we stored it in a value named "it" which"Iterator" type
 
         // the specail method
